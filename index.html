@@ -16,7 +16,14 @@
   <header class="navbar">
   <div class="logo">GTG</div>
 
-  <nav class="nav-links">
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav-links" id="navMenu">
     <a href="#">Home</a>
     <a href="#">Shop</a>
     <a href="#">Fragrances</a>
@@ -25,12 +32,12 @@
     <a href="#">Contact</a>
   </nav>
 
-  <div>
+  <div class="nav-actions">
     <i class="fa-solid fa-magnifying-glass"></i>
     <button class="btn-primary">Shop Now</button>
   </div>
-  
 </header>
+
   <div class="hero-left">
     <span class="badge">Awarded the best perfume in the world</span>
     <h1>Live your best life.</h1>
@@ -60,7 +67,7 @@
   <!-- LEFT : GALLERY -->
   <div class="product-gallery">
     <div class="main-image">
-      <img id="mainImage" src="images/pink.jpeg" alt="">
+      <img id="mainImage" src="assets/pink.jpeg" alt="pink perfume image" loading="lazy">
       <button class="nav prev">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
@@ -82,10 +89,10 @@
     </div>
 
     <div class="thumbnails">
-      <img src="images/img 1.jpeg">
-      <img src="images/img 2.jpeg">
-      <img src="images/img 3.jpeg">
-      <img src="images/img 4.jpeg">
+      <img src="assets/img 1.jpeg" alt="perfume image" loading="lazy">
+      <img src="assets/img 2.jpeg" alt="perfume image" loading="lazy">
+      <img src="assets/img 3.jpeg" alt="perfume image" loading="lazy">
+      <img src="assets/img 4.jpeg" alt="perfume image" loading="lazy">
     </div>
   </div>
 
@@ -110,27 +117,27 @@
         <div class="fragrance-options single">
           <div class="fragrance-item active">
             <p>Original</p>
-            <img src="images/original.jpeg" alt="">
+            <img src="assets/original.jpeg" alt="orginal perfume image" loading="lazy">
           </div>
           <div class="fragrance-item">
             <p>Lily</p>
-            <img src="images/lily.jpeg" alt="">
+            <img src="assets/lily.jpeg" alt="lily perfume image" loading="lazy">
           </div>
           <div class="fragrance-item">
             <p>Rose</p>
-            <img src="images/rose.jpeg" alt="">
+            <img src="assets/rose.jpeg" alt="rose perfume image" loading="lazy">
           </div>
         </div>
         <div class="included">
           <div class="box">
             <p>Every 30 Days</p>
-            <img src="images/original.jpeg">
+            <img src="assets/original.jpeg" alt="original perfume image" loading="lazy">
           </div>
           <div class="box">
             <p>One Time <strong>(Free)</strong></p>
-            <img src="images/original.jpeg">
-            <img src="images/lily.jpeg">
-            <img src="images/rose.jpeg">
+            <img src="assets/original.jpeg" alt="original perfume image" loading="lazy">
+            <img src="assets/lily.jpeg" alt="lily perfume image" loading="lazy">
+            <img src="assets/rose.jpeg" alt="rose perfume image" loading="lazy">
           </div>
         </div>
       </div>
@@ -154,15 +161,15 @@
         <div class="fragrance-options double-1">
           <div class="fragrance-item active">
             <p>Original</p>
-            <img src="images/original.jpeg" alt="">
+            <img src="assets/original.jpeg" alt="original perfume image" loading="lazy">
           </div>
           <div class="fragrance-item">
             <p>Lily</p>
-            <img src="images/lily.jpeg" alt="">
+            <img src="assets/lily.jpeg" alt="lily perfume image" loading="lazy">
           </div>
           <div class="fragrance-item">
             <p>Rose</p>
-            <img src="images/rose.jpeg" alt="">
+            <img src="assets/rose.jpeg" alt="rose perfume image" loading="lazy">
           </div>
         </div>
 
@@ -170,27 +177,27 @@
         <div class="fragrance-options double-2">
           <div class="fragrance-item active">
             <p>Original</p>
-            <img src="images/original.jpeg" alt="">
+            <img src="assets/original.jpeg" alt="original perfume image" loading="lazy">
           </div>
           <div class="fragrance-item">
             <p>Lily</p>
-            <img src="images/lily.jpeg" alt="">
+            <img src="assets/lily.jpeg" alt="lily perfume image" loading="lazy">
           </div>
           <div class="fragrance-item">
             <p>Rose</p>
-            <img src="images/rose.jpeg" alt="">
+            <img src="assets/rose.jpeg" alt="rose perfume image" loading="lazy">
           </div>
         </div>
         <div class="included">
           <div class="box">
             <p>Every 30 Days</p>
-            <img src="images/original.jpeg">
+            <img src="assets/original.jpeg" alt="original perfume image" loading="lazy">
           </div>
           <div class="box">
             <p>One Time <strong>(Free)</strong></p>
-            <img src="images/original.jpeg">
-            <img src="images/lily.jpeg">
-            <img src="images/rose.jpeg">
+            <img src="assets/original.jpeg" alt="original perfume image" loading="lazy">
+            <img src="assets/lily.jpeg" alt="lily perfume image" loading="lazy">
+            <img src="assets/rose.jpeg" alt="rose perfume image" loading="lazy">
           </div>
         </div>
         <ul class="features" id="featuresList">
@@ -259,8 +266,9 @@
     <div class="spray-card">
       <img
         class="collection-img"
-        src="images/img 5.jpeg"
+        src="assets/img 5.jpeg"
         alt="Perfume Collection"
+        loading="lazy"
       >
     </div>
   </div>
@@ -296,108 +304,108 @@
 
 <!-- ================= COMPARISON ================= -->
 <section class="comparison">
-  <h2 class="comparison-heading ">---</h2>
+  <h2 class="comparison-heading">---</h2>
   <h2 class="comparison-heading">Why GTG is the #1 Choice</h2>
 
-  <div class="comparison-table">
+  <table class="comparison-table">
+    <thead>
+      <tr class="row header">
+        <th class="cell">Qualities</th>
 
-    <!-- HEADER -->
-    <div class="row header">
-      <div class="cell">Qualities</div>
+        <th class="cell highlight">
+          <img src="assets/gtc.jpeg" alt="GTG" loading="lazy">
+          <p>GTG</p>
+        </th>
 
-      <div class="cell highlight">
-        <img src="images/gtc.jpeg" alt="">
-        <p>GTG</p>
-      </div>
+        <th class="cell">
+          <img src="assets/img 1.jpeg" alt="Arose" loading="lazy">
+          <p>Arose</p>
+        </th>
 
-      <div class="cell">
-        <img src="images/img 1.jpeg" alt="">
-        <p>Arose</p>
-      </div>
+        <th class="cell">
+          <img src="assets/img 3.jpeg" alt="Bella" loading="lazy">
+          <p>Bella</p>
+        </th>
 
-      <div class="cell">
-        <img src="images/img 3.jpeg" alt="">
-        <p>Bella</p>
-      </div>
+        <th class="cell">
+          <img src="assets/img 4.jpeg" alt="Daisies" loading="lazy">
+          <p>Daisies</p>
+        </th>
+      </tr>
+    </thead>
 
-      <div class="cell">
-        <img src="images/img 4.jpeg" alt="">
-        <p>Daisies</p>
-      </div>
-    </div>
+    <tbody>
+      <tr class="row">
+        <td class="cell">Potency Concentration</td>
+        <td class="cell highlight">10x</td>
+        <td class="cell">1x</td>
+        <td class="cell">1x</td>
+        <td class="cell">10x</td>
+      </tr>
 
-    <!-- ROWS -->
-    <div class="row">
-      <div class="cell">Potency Concentration</div>
-      <div class="cell highlight">10x</div>
-      <div class="cell">1x</div>
-      <div class="cell">1x</div>
-      <div class="cell">10x</div>
-    </div>
+      <tr class="row">
+        <td class="cell">Longevity</td>
+        <td class="cell highlight"><span class="check">✓</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✓</span></td>
+      </tr>
 
-    <div class="row">
-      <div class="cell">Longevity</div>
-      <div class="cell highlight"><span class="check">✓</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✓</span></div>
-    </div>
+      <tr class="row">
+        <td class="cell">Sillage</td>
+        <td class="cell highlight"><span class="check">✓</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+      </tr>
 
-    <div class="row">
-      <div class="cell">Sillage</div>
-      <div class="cell highlight"><span class="check">✓</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-    </div>
+      <tr class="row">
+        <td class="cell">Bottle Design Score</td>
+        <td class="cell highlight">9</td>
+        <td class="cell">5</td>
+        <td class="cell">6</td>
+        <td class="cell">2</td>
+      </tr>
 
-    <div class="row">
-      <div class="cell">Bottle Design Score</div>
-      <div class="cell highlight">9</div>
-      <div class="cell">5</div>
-      <div class="cell">6</div>
-      <div class="cell">2</div>
-    </div>
+      <tr class="row">
+        <td class="cell">Blend and Harmony</td>
+        <td class="cell highlight"><span class="check">✓</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+      </tr>
 
-    <div class="row">
-      <div class="cell">Blend and Harmony</div>
-      <div class="cell highlight"><span class="check">✓</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-    </div>
+      <tr class="row">
+        <td class="cell">Skin Compatibility</td>
+        <td class="cell highlight"><span class="check">✓</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+      </tr>
 
-    <div class="row">
-      <div class="cell">Skin Compatibility</div>
-      <div class="cell highlight"><span class="check">✓</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-    </div>
+      <tr class="row">
+        <td class="cell">Scent Profile</td>
+        <td class="cell highlight"><span class="check">✓</span></td>
+        <td class="cell"><span class="cross">✓</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+      </tr>
 
-    <div class="row">
-      <div class="cell">Scent Profile</div>
-      <div class="cell highlight"><span class="check">✓</span></div>
-      <div class="cell"><span class="cross">✓</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-    </div>
-
-    <div class="row">
-      <div class="cell">Price vs. Quality</div>
-      <div class="cell highlight"><span class="check">✓</span></div>
-      <div class="cell"><span class="cross">✓</span></div>
-      <div class="cell"><span class="cross">✕</span></div>
-      <div class="cell"><span class="cross">✓</span></div>
-    </div>
-
-  </div>
+      <tr class="row">
+        <td class="cell">Price vs. Quality</td>
+        <td class="cell highlight"><span class="check">✓</span></td>
+        <td class="cell"><span class="cross">✓</span></td>
+        <td class="cell"><span class="cross">✕</span></td>
+        <td class="cell"><span class="cross">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
 
   <button class="btn-primary">Try It Risk-Free</button>
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
 

@@ -1,4 +1,13 @@
 
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+  
   const singlePlan = document.getElementById("singlePlan");
   const doublePlan = document.getElementById("doublePlan");
 
@@ -9,13 +18,13 @@
   singlePlan.addEventListener("change", () => {
     singleContent.style.display = "block";
     doubleContent.style.display = "none";
-    featuresList.style.display = "block";   // ✅ SHOW features
+    featuresList.style.display = "block";   
   });
 
   doublePlan.addEventListener("change", () => {
     singleContent.style.display = "none";
     doubleContent.style.display = "block";
-    featuresList.style.display = "none";    // ❌ HIDE features
+    featuresList.style.display = "none";   
   });
 
   /* ======================
@@ -23,11 +32,11 @@
 ====================== */
 
 const galleryImages = [
-  "images/pink.jpeg",
-  "images/img 1.jpeg",
-  "images/img 2.jpeg",
-  "images/img 3.jpeg",
-  "images/img 4.jpeg"
+  "assets/pink.jpeg",
+  "assets/img 1.jpeg",
+  "assets/img 2.jpeg",
+  "assets/img 3.jpeg",
+  "assets/img 4.jpeg"
 ];
 
 let currentIndex = 0;
